@@ -1,0 +1,7 @@
+output = []
+    def reemovNestings(l):
+        for i in l:
+            if type(i) == list:
+                reemovNestings(i)
+            else:
+                output.append(i)
